@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-string[] inputFile = await File.ReadAllLinesAsync(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "input.txt"));
+﻿string[] inputFile = await File.ReadAllLinesAsync(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "input.txt"));
 int[] measurements = (Array.ConvertAll(inputFile, x => Int32.Parse(x)));
 
 Console.WriteLine($"Solution of Task One: {SolveTaskOne(measurements)}");
