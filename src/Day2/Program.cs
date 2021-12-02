@@ -22,7 +22,7 @@ int SolveTaskOne(string[] commands)
                 position.Depth += Convert.ToInt32(course[1]);
                 break;
             default:
-                throw new ArgumentOutOfRangeException("Unknown command");
+                throw new Exception("Unknown command");
         }
     }
 
@@ -49,7 +49,7 @@ int SolveTaskTwo(string[] commands)
                 position.Aim += Convert.ToInt32(course[1]);
                 break;
             default:
-                throw new ArgumentOutOfRangeException("Unknown command");
+                throw new Exception("Unknown command");
         }
     }
 
