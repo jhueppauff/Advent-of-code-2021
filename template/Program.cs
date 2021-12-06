@@ -1,0 +1,1 @@
+﻿string[] inputFile = await File.ReadAllLinesAsync(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "input.txt"));
